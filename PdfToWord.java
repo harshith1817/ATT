@@ -1,16 +1,15 @@
-package arjun;
+package Harshith;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
-
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-public class week12 {
+public class Week12 {
 	
 	@Test
 	public void testOne() throws Exception {
@@ -24,7 +23,7 @@ public class week12 {
 		WebElement selectDoc = driver.findElement(By.xpath("//*[@id=\"pickfiles\"]/span"));
 		selectDoc.click();
 		
-		fileUpload("C:\\Users\\student\\Downloads\\Experiment-7.docx");
+		fileUpload("C:\\Users\\chint\\Downloads\\Experiment-7.docx");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.findElement(By.id("processTaskTextBtn")).click();
     }
