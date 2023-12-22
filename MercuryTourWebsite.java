@@ -1,10 +1,10 @@
-package arjun;
+package Harshith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-public class Week8a {
+public class Week2 {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chromeDriver","C:\\Users\\student\\Documents\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -22,22 +22,22 @@ public class Week8a {
 		register.click();
 		Thread.sleep(200);
 		WebElement firstName=driver.findElement(By.id("acc_first_name"));
-		firstName.sendKeys("solomon");
+		firstName.sendKeys("Harshith");
 		Thread.sleep(200);
 		WebElement lastName=driver.findElement(By.id("acc_last_name"));
-		lastName.sendKeys("bye");
+		lastName.sendKeys("Chintakindi");
 		Thread.sleep(200);
 		WebElement emailid=driver.findElement(By.id("acc_user_email"));
-		emailid.sendKeys("solomanbye@gamil.com");
+		emailid.sendKeys("chintakindibhargav2016@gamil.com");
 		Thread.sleep(200);
 		WebElement setpassword=driver.findElement(By.id("acc_user_password"));
-		setpassword.sendKeys("heavydriver");
+		setpassword.sendKeys("Idontknow@18");
 		Thread.sleep(200);
 		WebElement confirmpassword=driver.findElement(By.id("acc_user_passconf"));
-		confirmpassword.sendKeys("heavydriver");
+		confirmpassword.sendKeys("Idontknow@18");
 		Thread.sleep(200);
 		WebElement mobilenumber=driver.findElement(By.id("acc_mobile_no"));
-		mobilenumber.sendKeys("100001");
+		mobilenumber.sendKeys("8019801084");
 		Thread.sleep(200);
 		WebElement registerBtn=driver.findElement(By.xpath("(//button[normalize-space()='Register']"));
 		registerBtn.click();
