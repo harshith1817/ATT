@@ -1,5 +1,5 @@
 //Output: https://drive.google.com/file/d/175L2Oh6tCbKeOz4lZMvaxWgh8KYJgct0/view?usp=sharing
-package arjun;
+package Harshith;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-public class facebook {
+public class MicroProject {
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		HashMap<String, Object>prefs=new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications",1);
