@@ -1,4 +1,4 @@
-package arjun;
+package Harshith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,7 +26,7 @@ public class Week10 {
  
         WebElement firstName = driver.findElement(By.name("firstName"));
         firstName.click();
-        firstName.sendKeys("Hemanth");
+        firstName.sendKeys("Harshith");
  
         WebElement nextBtn = driver.findElement(By.className("VfPpkd-vQzf8d"));
         nextBtn.click();
@@ -34,16 +34,16 @@ public class Week10 {
  
         WebElement day = driver.findElement(By.id("day"));
         day.click();
-        day.sendKeys("22");
+        day.sendKeys("18");
         Thread.sleep(500);
  
         Select DM = new Select(driver.findElement(By.id("month")));
-		DM.selectByValue("6");
+		DM.selectByValue("10");
 		Thread.sleep(500);
  
 		WebElement year = driver.findElement(By.id("year"));
 		year.click();
-        year.sendKeys("2000");
+        year.sendKeys("2003");
         Thread.sleep(500);
  
         Select gender = new Select(driver.findElement(By.id("gender")));
@@ -56,17 +56,17 @@ public class Week10 {
  
         WebElement username1 = driver.findElement(By.name("Username"));
         username1.click();
-        username1.sendKeys("higjhkgbghlow672");
+        username1.sendKeys("harshith18");
         WebElement nextBtn3 = driver.findElement(By.className("VfPpkd-vQzf8d"));
         nextBtn3.click();
         Thread.sleep(1000);
         WebElement newPass = driver.findElement(By.name("Passwd"));
         newPass.click();
-        newPass.sendKeys("Shizuka63921@");
+        newPass.sendKeys("Idontknow@18");
         Thread.sleep(500);
         WebElement confPass = driver.findElement(By.name("PasswdAgain"));
         confPass.click();
-        confPass.sendKeys("Shizuka63921@");
+        confPass.sendKeys("Idontknow@18");
         WebElement nextBtn4 = driver.findElement(By.className("VfPpkd-vQzf8d"));
         nextBtn4.click();
  
