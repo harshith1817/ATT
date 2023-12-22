@@ -1,4 +1,4 @@
-package arjun;
+package Harshith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class facebook {
+public class Week3 {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -27,40 +27,40 @@ public class facebook {
 		WebElement firstName = driver.findElement(By.name("firstname"));
 		firstName.click();
 		Thread.sleep(1000);
-		firstName.sendKeys("Mani");
+		firstName.sendKeys("Harshith");
 		
 		WebElement lastName = driver.findElement(By.name("lastname"));
 		lastName.click();
 		Thread.sleep(1000);
-		lastName.sendKeys("Venkat");
+		lastName.sendKeys("Chintakindi");
 		
 		WebElement email = driver.findElement(By.name("reg_email__"));
 		email.click();
 		Thread.sleep(1000);
-		email.sendKeys("manivenkat672@gmail.com");
+		email.sendKeys("chintakindibhargav2016@gmail.com");
 		
 		WebElement password = driver.findElement(By.xpath("//*[@id=\"password_step_input\"]"));
 		password.click();
 		Thread.sleep(1000);
-		password.sendKeys("Manivenkat472@");
+		password.sendKeys("Idontknow@18");
 		
 		WebElement conf_email = driver.findElement(By.name("reg_email_confirmation__"));
 		conf_email.click();
 		Thread.sleep(1000);
-		conf_email.sendKeys("manivenkat672@gmail.com");
+		conf_email.sendKeys("chintakindibhargav2016@gmail.com");
 		
 		Select DB = new Select(driver.findElement(By.name("birthday_day")));
-		DB.selectByValue("4");
+		DB.selectByValue("18");
 		
 		Thread.sleep(1000);
 		
 		Select DM = new Select(driver.findElement(By.name("birthday_month")));
-		DM.selectByValue("7");
+		DM.selectByValue("10");
 		
 		Thread.sleep(1000);
 		
 		Select DY = new Select(driver.findElement(By.name("birthday_year")));
-		DY.selectByValue("2002");
+		DY.selectByValue("2003");
 		
 		WebElement maleBtn = driver.findElement(By.xpath("(//label[normalize-space()='Male'])[1]"));
 		maleBtn.click();
