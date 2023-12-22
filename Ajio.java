@@ -1,4 +1,4 @@
-package arjun;
+package Harshith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,7 +23,7 @@ public class Week6 {
 		WebElement phonenum = driver.findElement(By.name("username"));
 		Thread.sleep(2000);
 		phonenum.click();
-		phonenum.sendKeys("9247191127");
+		phonenum.sendKeys("8019801084");
 		
 		WebElement continueBtn = driver.findElement(By.className("login-btn"));
 		Thread.sleep(2000);
