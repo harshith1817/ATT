@@ -1,4 +1,4 @@
-//Output: https://drive.google.com/file/d/175L2Oh6tCbKeOz4lZMvaxWgh8KYJgct0/view?usp=sharing
+//Output: https://drive.google.com/file/d/16hvGmxlIVc8PwkaJ4QkE_q7-Z1N0ubkR/view?usp=sharing
 package Harshith;
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -56,6 +56,21 @@ public class MicroProject {
 		Thread.sleep(2000);
 		WebElement skipbtn=driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div/div[2]/div/div[2]/a"));
 		skipbtn.click();
+		Thread.sleep(2000);
+		WebElement Name=driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/div[2]/div/div/div[2]/div/div[1]/div[2]/div[1]/div/div/div/div/div/input"));
+		Name.sendKeys("Harshith");
+		Thread.sleep(2000);
+		WebElement age=driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/div[2]/div/div/div[2]/div/div[1]/div[2]/div[2]/div/div/div[2]/input"));
+		age.sendKeys("20");
+		Thread.sleep(2000);
+		WebElement MobileNumber=driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/div[2]/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/input"));
+		MobileNumber.sendKeys("8019801084");
+		Thread.sleep(2000);
+		WebElement email=driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/div[2]/div/div/div[2]/div/div[2]/div[2]/div[3]/div/div/div[2]/input"));
+		email.sendKeys("chintakindibhargav2016@gmail.com");
+		Thread.sleep(2000);
+		WebElement continuebutton=driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[3]/div[2]/button"));
+		continuebutton.click();
 		Thread.sleep(2000);
 		WebElement pop=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/span ,"));
 		pop.click();
