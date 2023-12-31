@@ -1,4 +1,4 @@
-package Harshith;
+package att;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -20,28 +20,18 @@ public class Week8  {
 		Thread.sleep(1000);
 		WebElement img=driver.findElement(By.xpath("//a[normalize-space()='Images']"));
 		img.click();
-		WebElement img1=driver.findElement(By.xpath("//img[@alt='CMR Institute of Technology, Hyderabad Courses & Fees 2023']"));
+		WebElement img1=driver.findElement(By.xpath("/html/body/div[2]/c-wiz/div[3]/div[1]/div/div/div/div/div[1]/div[1]/span/div[1]/div[1]/div[1]/a[1]/div[1]/img"));
 		Actions action = new Actions(driver);
 		action.contextClick(img1).build().perform();
 		Robot robot=new Robot();
-		robot.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(1000);
-		robot.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(1000);
-		robot.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(1000);
-		robot.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(1000);
-		robot.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(1000);
-		robot.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(1000);
-		robot.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(1000);
+		for(int i=0;i<=6;i++) {
+			robot.keyPress(KeyEvent.VK_DOWN);
+			Thread.sleep(1000);
+		}
 		robot.keyPress(KeyEvent.VK_ENTER);
 		Thread.sleep(1000);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		System.out.println("downloaded");
-		}
-		}
+	}
+}
  
