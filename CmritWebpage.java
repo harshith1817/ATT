@@ -1,29 +1,26 @@
-package Harshith;
+package att;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 public class Week5 {
-
 	public static void main(String[] args) throws InterruptedException{
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\chint\\Downloads\\chromedriver.exe");
-		WebDriver obj =new ChromeDriver();
+		System.setProperty("webdriver.chromedriver", "C:\\Users\\chint\\Downloads\\chromedriver.exe");
+		WebDriver driver =new ChromeDriver();
 		Thread.sleep(2000);
-		obj.manage().window().maximize();
-		obj.get("https://cmritautonomous.org/beeserp/Login.aspx");
+		driver.manage().window().maximize();
+		driver.get("https://cmritautonomous.org/beeserp/Login.aspx");
 		Thread.sleep(2000);
-		WebElement un=obj.findElement(By.name("txtUserName"));
-		un.sendKeys("21R01A7219P");
+		WebElement username=driver.findElement(By.xpath("/html/body/div/div/div/form/div[3]/div[1]/div[2]/div/div[2]/input"));
+		username.sendKeys("21R01A7219P");
 		Thread.sleep(2000);
-		WebElement bn=obj.findElement(By.name("btnNext"));
-		bn.click();
-		WebElement ps=obj.findElement(By.name("txtPassword"));
-		ps.sendKeys("21R01A7219P");
+		WebElement next=driver.findElement(By.xpath("/html/body/div/div/div/form/div[3]/div[1]/div[2]/div/div[4]/input"));
+		next.click();
+		WebElement password=driver.findElement(By.xpath("/html/body/div/div/div/form/div[3]/div[1]/div[2]/div/div[3]/input"));
+		password.sendKeys("21R01A7219P");
 		Thread.sleep(2000);
-		WebElement sb=obj.findElement(By.name("btnSubmit"));
-		sb.click();
-		
+		WebElement submit=driver.findElement(By.xpath("/html/body/div/div/div/form/div[3]/div[1]/div[2]/div/div[5]/input"));
+		submit.click();
 	}
 }
