@@ -39,5 +39,6 @@ public class Week2 {
 		WebElement registerBtn=driver.findElement(By.xpath("/html/body/div[4]/div/div/div[2]/form/button"));
 		registerBtn.click();
 		Thread.sleep(100);
+		driver.quit();
 	}
 }
