@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class Week7 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chromedriver", "C:\\Users\\chint\\Downloads\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -12,11 +12,7 @@ public class Week7 {
         WebElement searchBox = driver.findElement(By.name("q"));
         searchBox.sendKeys("CMRIT");
         searchBox.submit();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Thread.sleep(5000);
         driver.quit();
     }
 }
