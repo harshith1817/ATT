@@ -16,7 +16,7 @@ public class Week8  {
 		Thread.sleep(2000);
 		WebElement searchBar=driver.findElement(By.name("q"));
 		searchBar.sendKeys("cmrit hyderabad");
-		searchBar.sendKeys(Keys.ENTER);
+		searchBar.submit();
 		Thread.sleep(1000);
 		WebElement img=driver.findElement(By.xpath("//a[normalize-space()='Images']"));
 		img.click();
