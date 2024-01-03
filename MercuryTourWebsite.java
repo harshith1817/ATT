@@ -3,7 +3,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 public class Week2 {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chromeDriver","C:\\Users\\student\\Documents\\chromedriver.exe");
@@ -11,9 +10,8 @@ public class Week2 {
 		driver.manage().window().maximize();
 		driver.get("https://www.mercurytravels.co.in/");
 		Thread.sleep(2000);
-		Actions builder =new Actions(driver);
 		WebElement customerLogin=driver.findElement(By.xpath("(//a[normalize-space()='Customer Login'])[2]"));
-		builder.moveToElement(customerLogin).perform();
+		customerLogin.click();
 		Thread.sleep(200);
 		WebElement register=driver.findElement(By.xpath("(//a[normalize-space()='Register'])[2]"));
 		register.click();
